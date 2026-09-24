@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Киберпанк // Досье</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="rain"></canvas>
+<div class="scanlines"></div>
+<div class="vignette"></div>
+
+<div class="wrap">
+
+  <header class="hero">
+    <p class="tag">СИСТЕМА АКТИВНА · ДОСЬЕ ЖАНРА</p>
+    <h1 class="glitch" data-text="КИБЕРПАНК: HIGH TECH, LOW LIFE">КИБЕРПАНК: HIGH TECH, LOW LIFE</h1>
+    <p class="lede" id="lede"><span class="cursor"></span></p>
+  </header>
+
+  <section class="reveal">
+    <h2>Что это такое</h2>
+    <p>Киберпанк — поджанр научной фантастики, действие которого разворачивается в недалёком будущем, где высокие технологии сочетаются с социальным упадком.</p>
+    <p class="dim">Формула жанра часто описывается фразой «high tech, low life» — передовые технологии существуют рядом с бедностью, преступностью и разрушением привычного порядка.</p>
+  </section>
+
+  <section class="reveal">
+    <h2>Ключевые темы</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>КОРПОРАЦИИ ВМЕСТО ГОСУДАРСТВ</h3>
+        <p>Мегакорпорации контролируют города, ресурсы и законы сильнее, чем правительства.</p>
+      </div>
+      <div class="card">
+        <h3>ТЕЛО И МАШИНА</h3>
+        <p>Кибернетические импланты стирают границу между человеком и техникой.</p>
+      </div>
+      <div class="card">
+        <h3>ХАКЕРЫ И СЕТИ</h3>
+        <p>Виртуальное пространство — такое же поле боя, как и городские улицы.</p>
+      </div>
+      <div class="card">
+        <h3>НЕОНОВЫЙ УПАДОК</h3>
+        <p>Мегаполисы тонут в дожде, рекламе и мусоре, но светятся неоном по ночам.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <h2>Как жанр развивался</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <p class="tl-year">1980-е</p>
+        <p>Термин закрепляется в фантастике, жанр формируется как отдельное направление со своей эстетикой и проблематикой.</p>
+      </div>
+      <div class="tl-item">
+        <p class="tl-year">Кино и визуальная культура</p>
+        <p>Экранизации закрепляют образ мегаполиса будущего — дождь, неон, реклама на фасадах небоскрёбов.</p>
+      </div>
+      <div class="tl-item">
+        <p class="tl-year">Игры и настольные системы</p>
+        <p>Жанр переходит в интерактивные форматы, где игрок сам исследует город и его подполье.</p>
+      </div>
+      <div class="tl-item">
+        <p class="tl-year">Сегодня</p>
+        <p>Эстетика киберпанка используется далеко за пределами фантастики — в дизайне, музыке, моде.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <h2>Визуальный язык</h2>
+    <p>Узнаваемая палитра жанра держится на нескольких приёмах.</p>
+    <div class="quote-strip">
+      <span class="pill">неон на тёмном фоне</span>
+      <span class="pill">дождь и отражения</span>
+      <span class="pill">реклама на весь фасад</span>
+      <span class="pill">провода и импланты</span>
+      <span class="pill">контраст бедности и роскоши</span>
+      <span class="pill">интерфейсы поверх реальности</span>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <h2>Терминал</h2>
+    <div class="terminal">
+      <div class="term-bar">
+        <span class="term-dot" style="background:var(--magenta)"></span>
+        <span class="term-dot" style="background:#f5c542"></span>
+        <span class="term-dot" style="background:var(--cyan)"></span>
+        <span style="margin-left:6px;">guest@night-city:~$</span>
+      </div>
+      <div class="term-body">
+        <p id="term-out">$ ожидание команды…</p>
+        <button class="term-btn" id="term-btn">./random_fact.sh</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>Досье составлено как обзорная справка по жанру, а не как исчерпывающая энциклопедия.</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
